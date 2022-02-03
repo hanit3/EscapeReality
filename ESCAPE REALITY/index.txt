@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <head>
-  <title>À¥ÇÁ·Î±×·¡¹Ö°úÁ¦</title>
+  <title>ì›¹í”„ë¡œê·¸ëž˜ë°ê³¼ì œ</title>
   <meta charset="utf-8"/>
-  <meta authors="IT°øÇÐÀü°øÇÑÀç°æ">
+  <meta authors="IT">
   <link rel="stylesheet" type="text/css" href="style-size.css"/>
   <link rel="stylesheet" type="text/css" href="style-layout.css"/>
   <link rel="stylesheet" type="text/css" href="style-presentation.css"/>
@@ -24,10 +24,10 @@
 <br/>
 <section class="nav_center">
   <ul>
-    <li><a href = "game_intro.html" > °ÔÀÓ ¼Ò°³ </a></li>
-    <li><a href = "game_howto.html" > °ÔÀÓ ¹æ¹ý </a></li>
+    <li><a href = "game_intro.html" > ê²Œìž„ ì†Œê°œ </a></li>
+    <li><a href = "game_howto.html" > ê²Œìž„ ë°©ë²• </a></li>
     <li><a href = "TMI.html" > TMI </a></li>
-	<li><a href = "game_start.html" > °ÔÀÓ ½ÃÀÛ </a></li>
+	<li><a href = "game_start.html" > ê²Œìž„ ì‹œìž‘ </a></li>
   </ul>
  </section>
 <br/>
@@ -37,7 +37,7 @@
 <footer>
 <br/>
   <span id="copyright"><hr/>
-     @2019 1ÇÐ±â À¥ÇÁ·Î±×·¡¹Ö±âÃÊ ±â¸»°úÁ¦. IT°øÇÐÀü°ø ÇÑÀç°æ<br/><br/>
+     @2019 1í•™ê¸° ì›¹í”„ë¡œê·¸ëž˜ë°ê¸°ì´ˆ ê¸°ë§ê³¼ì œ. ITê³µí•™ì „ê³µ í•œìž¬ê²½<br/><br/>
   </div>
 </footer>
 </body>
