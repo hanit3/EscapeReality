@@ -1,0 +1,38 @@
+#logo {float:left; margin:5px 0 0 470px; }
+#logo_main { float:left; margin:150px 0 0 450px; }
+
+nav { margin:0 0 50px 280px; float:left;} 
+nav ul li {float:left;  margin:0 50px; list-style:none; }
+article {float:left; margin:20px 0 0 50px; overflow:hidden;}
+
+
+.nav_center{float:left; margin:20px 0 50px 170px}
+.nav_center ul li {float:left; margin: 0 50px; list-style:none;}
+.center {float:left; margin:}
+.contents {float:left; margin:0 0 0 50px;}
+audio {float:left; margin: 0 0 20px 520px}
+
+#line {float:left; margin:0 0 0 360px;}
+#copyright {float:left; margin:200px 0 0 575px;}
+
+form {float:left; margin:50px 0 0 250px;}
+form input {float:left; margin: 0 10px;}
+
+#answer1, #answer2, #answer_btn1, #answer_btn2, #answer3, answer_btn3 {float:left;}
+#linkText {float: left; margin: 50px 0 0 30px}
+
+#fields {position:static; width:500;}
+#display_content {overflow:auto;}
+#display_video {position: relative; left: 20px; }
+.roomcontents1 { float:left;margin:10px 0 10px 70px }
+.roomcontents3 {position:absolute; float:left;margin:250px 0 10px 70px }
+.roomcontents2 {float:left;margin:50px 0 10px 70px}
+#windowlogin {float:left; margin:20px 0 0 70px}
+#projector { float:left; margin: 20px 0 0 0}
+#calender { position: static; margin:20px 0 0 50px}
+
+#colorbox1 {position:absolute; top:750px; left:70px; padding:120px 90px 120px 90px; float:left; margin: 10px 10px 10px 10px;}
+#colorbox2 {position:absolute;  top:750px; left:450px; padding:120px 140px 120px 140px; float:left; margin: 10px 10px 10px 10px;}
+
+#colorform {float:left; position:absolute; top:1050px; left: 100px; margin: 10px 10px 10px 10px;}
+#linkTextColor{float:left; position:absolute; top:1060px; left: 400px; margin: 10px 10px 10px 10px;}

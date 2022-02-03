@@ -1,0 +1,37 @@
+/*
+#logo {font-size: 48px; font-family:'Hanna', sans-serif;}
+#logo:link {color:white; text-decoration : none;}
+#logo:visited {color:white;text-decoration : none;}
+*/
+
+body {background-color: black; color:white;}
+body a:link  {color:white;}
+body a:visited {color:white;}
+nav { background-color: black; }
+nav ul {font-size:24px; list-style:none; font-family:'Nanum Myeongjo', sans-serif;
+    font-weight: bolder; color: gray;
+}
+nav a { text-decoration:none; color:white; border-style: hidden solid hidden solid;
+    border-color: transparent; padding-left: 10px; padding-right:10px;
+}
+.nav_center ul {font-size:30px; list-style:none; font-family:'Nanum Myeongjo', sans-serif;
+    font-weight: bolder; color: gray;
+}
+.nav_center a { text-decoration:none; color:white; border-style: hidden solid hidden solid;
+    border-color: transparent; padding-left: 10px; padding-right:10px;
+}
+nav a:hover { color:skyblue;    border-color: gray; }
+.nav_center a:hover{ color:skyblue;    border-color: gray; }
+
+
+#copyright{font-family:'Nanum Myeongjo', sans-serif; font-size: 11px; }
+.contents {font-family:'Nanum Myeongjo', serif;}
+.contents h2 ,.roomcontents1 h2, .roomcontents3 h2 {font-weight: bold;border-style: hidden hidden hidden solid;
+    border-color: gray; padding-left: 10px; padding-right:10px;}
+.fields {font-family:'Nanum Myeongjo', serif;}
+.under_hobbyname {font-weight:bolder;}
+.wrap { border-style: solid hidden hidden hidden;
+    border-color: white; padding-left: 10px; padding-right:10px; border-width:3px;}
+.roomcontents1, .roomcontents2, form, #linkText h2, .roomcontents3 {font-family:'Nanum Myeongjo', sans-serif; font-size:15pt; line-height:30pt;}
+.inputpw {font-family:'Nanum Myeongjo', sans-serif; font-size:12pt;}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+  <title>웹프로그래밍과제</title>
+  <meta charset="utf-8"/>
+  <meta authors="IT공학전공한재경">
+  <link rel="stylesheet" type="text/css" href="style-size.css"/>
+  <link rel="stylesheet" type="text/css" href="style-layout.css"/>
+  <link rel="stylesheet" type="text/css" href="style-presentation.css"/>
+    <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" rel="stylesheet">
+</head>
+<body>
+<div class ="wrap">
+<header>
+  <a href="main.html" id="logo"><img src="logo3.png" width="550"></img></a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href = "game_intro.html" > 게임 소개 </a></li>
+    <li><a href = "game_howto.html" > 게임 방법 </a></li>
+    <li><a href = "TMI.html" > TMI </a></li>
+	<li><a href = "game_start.html" style="border-color:gray;"> 게임 시작 </a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="roomcontents1">
+<h2 style="font-weight:bolder;">Room 2</h2>
+문을 열고 나오니 정말 뜬금없게도 명신관 계단 강의실이 나왔다. QR코드를 보니 702호이다.<br/>
+나는 아직 꿈인 게 틀림없다. 집에서 나오자마자 명신관 7층이라니. 있을 수 없는 일이다.<br/>
+일단 정수기에 가서 물부터 마셔야겠다.<br/>
+<br/>
+문이 또 열리지 않는다. 강의실에는 나 혼자 있고, 문을 두드려봐도 밖에서 지나치는 인기척은 들리지 않는다.<br/>
+강의실을 둘러보니 문 왼쪽에 버튼같이 생긴 무언가가 2개 있고 옆엔 영문 키패드가 있다. 아무래도 또 암호를 풀어야하는 것 같다.<br/>
+<br/>
+버튼 두 개가 나란히 있고, 왼쪽 버튼에는 SOOKMYUNG 이라고, 오른쪽 버튼에는 [ ? ] 라고 써져있다.<br/>
+SOOKMYUNG 버튼을 누를때마다 버튼의 색이 변하기 시작했다. 오른쪽 버튼도 누르니까 색이 다른 순서로 변한다.<br/>
+</div>
+<div class="roomcontents2">
+  <span id="colorbox1" 
+  style="color:black; background: white; position:absolute; top:750px; left:70px; padding:120px 90px 120px 90px; float:left; margin: 10px 10px 10px 10px;" onclick="transcolor1();"><strong>SOOKMYUNG</strong></span>
+  <span id="colorbox2" style="color:black; background:white;position:absolute;  top:750px; left:450px; padding:120px 140px 120px 140px; float:left; margin: 10px 10px 10px 10px; " onclick="transcolor2();"><strong>[ ? ]</strong></span>
+</div>
+
+<form id="colorform" style="float:left; position:absolute; top:1050px; left: 100px; margin: 10px 10px 10px 10px;">
+<span class="inputpw">-----암호를 입력하세요-----<br/></span>
+  <input id = "answer1" type = "text">
+  <input id = "answer_btn1" type = "button" value="확인" onclick="check2();">
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+</form>
+
+<script type="text/javascript">
+    var color_arr1 = new Array('white','green','blue','blue','yellow','red','orange','gray','skyblue','pink');
+	var color_arr2 = new Array('white','skyblue', 'gray', 'skyblue', 'green', 'blue', 'skyblue', 'pink');
+    var x = 0;
+	var y = 0;
+  function transcolor1(){
+	x += 1;
+	var timer = setInterval(1000);
+	if (x>9){
+	  window.clearTimeout(timer);
+	  x = 0;
+	 } 
+	document.getElementById("colorbox1").style.background = color_arr1[x];
+  }
+  
+  function transcolor2(){
+	y += 1;
+	var timer = setInterval(1000);
+	if (y>7){
+	  window.clearTimeout(timer);
+	  y = 0;
+	 } 
+	document.getElementById("colorbox2").style.background = color_arr2[y];
+  }
+
+  function check2(){
+    var ans = document.getElementById("answer1").value;
+	var correct = 'NUNSONG';
+	if (ans == 'NUNSONG') 
+	  document.getElementById("linkTextColor").innerHTML="<h2>문이 열렸다. 밖으로 나가보자.</h2>";	
+	else
+	 alert("잘못된 암호입니다. 다시 입력해주십시오.");
+  }
+</script>
+
+<a href='tobecontinued.html'><p id="linkTextColor" style="font-family:'Nanum Myeongjo', sans-serif;float:left; position:absolute; top:1060px; left: 400px; margin: 10px 10px 10px 10px;"></p></a>
+
+</body>
+</html>

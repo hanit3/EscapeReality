@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+  <title>웹프로그래밍과제</title>
+  <meta charset="utf-8"/>
+  <meta authors="IT공학전공한재경">
+  <link rel="stylesheet" type="text/css" href="style-size.css"/>
+  <link rel="stylesheet" type="text/css" href="style-layout.css"/>
+  <link rel="stylesheet" type="text/css" href="style-presentation.css"/>
+    <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" rel="stylesheet">
+</head>
+<body>
+<div class ="wrap">
+<header>
+  <a href="main.html" id="logo"><img src="logo3.png" width="550"></img></a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href = "game_intro.html" > 게임 소개 </a></li>
+    <li><a href = "game_howto.html" > 게임 방법 </a></li>
+    <li><a href = "TMI.html" > TMI </a></li>
+	<li><a href = "game_start.html" style="border-color:gray;"> 게임 시작 </a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="roomcontents1">
+<h2 style="font-weight:bolder">Room 1</h2>
+2시간 정도 잔 것 같다. 불편한 자세로 졸았더니 온몸이 찌뿌둥하다.<br/>
+목을 축이기 위해 냉장고를 열었다..<br/><br/>
+
+이상하다.<br/><br/>
+
+냉장고에 못보던 음식이 가득하다. 마라탕, 까르보나라, 연어초밥 등등..<br/>
+물만 빼고 다 있다. 점점 목이 말라온다.<br/>
+수돗물도 나오지 않는다. 정말 이상하다.<br/>
+편의점에 가려고 현관을 열었지만 현관 도어락이 작동하지 않는다.<br/><br/>
+
+'우우웅'<br/>
+갑자기 천장에서 빔 프로젝터 스크린이 내려온다. 우리집에 이런 건 없다. 나는 소스라치게 놀라 멍하니 빈 스크린을 바라보았다.<br/><br/>
+
+어느새 켜진 노트북에 암호를 입력해야 스크린이 보일 것 같다.<br/><br/>
+
+비밀번호? 대체 무엇?<br/>
+
+힌트는 I-XXX-FINE 뿐인 것 같다.<br/>
+
+<img id="windowlogin" src="windowlogin2.jpg" width="600"></img>
+</div>
+
+<form>
+  <span class="inputpw">-----암호를 입력하세요-----<br/></span>
+  <input id = "answer1" type = "text"/>
+  <input id = "answer_btn1" type = "button" value="확인" onclick="check1();"/>
+</form>
+
+<div class="roomcontents2"><p id="secondcontents" style="visibility:hidden;">
+프로젝터가 켜지고 어떤 영상이 나타났다.<br/>
+방을 나갈 비밀번호를 얻을 수 있을까? <br/>
+현관문 근처를 다시 자세히 살펴보니 달력이 있다. 중요한 힌트인 것 같다.<br/>
+그리고 작동 안되는 도어락 아래에 자물쇠가 하나 달려있다. 영어 대문자 한 자리, 숫자 두 자리로 이루어진 자물쇠이다. 이 자물쇠를 풀어야 문이 열릴 것 같다.<br/></p>
+<iframe src=" " id="projector" width="855" height="480"></iframe>
+
+<img id="calender" src="march2.jpg" width="400" style="visibility: hidden;"></img>
+</div>
+
+<form>
+<span class="inputpw">-----암호를 입력하세요-----<br/></span>
+  <input id = "answer2" type = "text">
+  <input id = "answer_btn2" type = "button" value="확인" onclick="check2();">
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+</form>
+
+<script type="text/javascript">
+  function check1() {
+    var ans1 = document.getElementById("answer1").value;
+	var correct1 = 'WHY';
+	if (ans1 == 'WHY'){
+	  document.getElementById("projector").src = "https://www.youtube.com/embed/WkdtmT8A2iY";
+	  document.getElementById("calender").style.visibility = 'visible';
+	  document.getElementById("secondcontents").style.visibility = 'visible';
+//	  document.getElementById("secondform").style.visibility = 'visible';
+	  }
+	else 
+	  alert("잘못된 암호입니다. 다시 입력해주십시오.");
+  }
+  
+  function check2(){
+    var ans = document.getElementById("answer2").value;
+	var correct = 'M74';
+	if (ans == 'M74') 
+	  document.getElementById("linkText").innerHTML="<h2>문이 열렸다. 밖으로 나가보자.</h2>";	
+	else
+	 alert("잘못된 암호입니다. 다시 입력해주십시오.");
+  }
+</script>
+
+<a href='2roommaratang.html'><p id="linkText"></p></a>
+</body>
+</html>

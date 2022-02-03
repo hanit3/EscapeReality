@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+  <title>웹프로그래밍과제</title>
+  <meta charset="utf-8"/>
+  <meta authors="IT공학전공한재경">
+  <link rel="stylesheet" type="text/css" href="style-size.css"/>
+  <link rel="stylesheet" type="text/css" href="style-layout.css"/>
+  <link rel="stylesheet" type="text/css" href="style-presentation.css"/>
+  <link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css" rel="stylesheet">
+</head>
+<body>
+  <script>
+    function display(){
+	  var fieldname = document.getElementById("field_select").value;
+	  var a;
+	  switch(fieldname){
+	  case "singer": 
+		document.getElementById("display_content").src = "singer.html"
+	    break;
+	  case "drama": 
+		document.getElementById("display_content").src = "drama.html"
+	    break;
+	  case "webtoon": 
+		document.getElementById("display_content").src = "webtoon.html"
+	    break;
+	  case "animation": 
+		document.getElementById("display_content").src = "animation.html"
+	    break;
+	  case "movie": 
+		document.getElementById("display_content").src = "movie.html"
+	    break;
+	  }
+	}
+  </script>
+  
+<div class ="wrap">
+<header>
+  <a href="main.html" id="logo"><img src="logo3.png" width="550"></img></a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href = "game_intro.html" > 게임 소개 </a></li>
+    <li><a href = "game_howto.html" > 게임 방법 </a></li>
+    <li><a href = "TMI.html" style="border-color:gray;"> TMI </a></li>
+	<li><a href = "game_start.html" > 게임 시작 </a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="contents">
+  <h2> 만든이 TMI (Too much Information) </h2>
+  <h3> 현실 대피소 소개 </h3>
+  <p style="text-decoration:underline;"><small>현실 탈출에 대한 염원을 담아 만든 현실 대피소. 만든이의 여러가지 취미에 대한 소개.</small></p>
+  <p> 분야를 선택하세요: 
+    <select name="field" id="field_select" size="1">
+    <option value="singer">가수</option>
+	<option value="drama">드라마</option>
+	<option value="webtoon">웹툰</option>
+	<option value="animation">애니메이션</option>
+	<option value="movie">영화</option>
+  </select>
+  <button id="select_btn" onclick="display();">선택</button><br/><br/>
+</p>
+  <iframe id="display_content" src="" name="display_content" width="1300" height="1600"></iframe>
+
+  <div id = "singer">
+	<a href = "singer.html" target="display_content"></a>
+  </div>
+  
+  <div id= "drama">
+	<a href = "drama.html" target="display_content"></a>
+  </div>
+  
+  <div id="webtoon">
+	<a href = "webtoon.html" target="display_content"></a>
+  </div>
+  
+  <div id="animation">
+	<a href = "animation.html" target="display_content"></a>
+  </div>
+  
+  <div id="movie">
+	<a href = "movie.html" target="display_content"></a>
+  </div>
+  
+</div>
+</body>
+</html>
